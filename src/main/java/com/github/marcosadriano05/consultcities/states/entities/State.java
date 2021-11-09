@@ -11,9 +11,9 @@ import java.util.List;
 
 @Entity(name = "State")
 @Table(name = "estado")
-@TypeDefs(
+@TypeDefs(value = {
         @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
-)
+})
 public class State {
 
     @Id
